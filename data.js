@@ -340,37 +340,162 @@ Cities are adapting to the new reality. Commercial real estate in traditional bu
     ],
 
     listening: [
+        // Cambridge 16 — Test 1
         {
-            id: "l1",
-            title: "University Library Tour",
-            description: "You will hear a librarian giving information to new students about library services. Complete the notes below.",
+            id: "cam16-t1-p1",
+            book: "Cambridge 16",
+            title: "Cambridge 16 — Test 1, Part 1",
+            audioFile: "source/cambridge/Audio cam 16/Test 1 Part 1.mp3",
+            playOnce: true,
+            description: "Listen to the audio ONCE only (like the real exam). Answer the questions while listening.",
             questions: [
-                { q: "The library is open from 8am to ___ on weekdays.", options: ["9pm", "10pm", "11pm", "midnight"], answer: 2 },
-                { q: "Students can borrow up to ___ books at a time.", options: ["5", "8", "10", "12"], answer: 2 },
-                { q: "The quiet study area is located on the ___ floor.", options: ["second", "third", "fourth", "fifth"], answer: 1 },
-                { q: "To reserve a group study room, students should book at least ___ in advance.", options: ["24 hours", "48 hours", "3 days", "1 week"], answer: 1 }
+                { q: "What is the woman's surname?", type: "fill", answer: "Renton" },
+                { q: "What is the woman's postcode?", options: ["BH5 2QL", "BH5 2QT", "BH5 2QS", "BH5 2QP"], answer: 0 },
+                { q: "The woman wants to book for:", options: ["2 nights", "3 nights", "5 nights", "7 nights"], answer: 2 },
+                { q: "She prefers a room with:", options: ["a bath", "a shower", "a balcony", "a sea view"], answer: 3 }
             ]
         },
         {
-            id: "l2",
-            title: "Job Interview Preparation",
-            description: "You will hear two students discussing preparation for job interviews. Choose the correct answer.",
+            id: "cam16-t1-p2",
+            book: "Cambridge 16",
+            title: "Cambridge 16 — Test 1, Part 2",
+            audioFile: "source/cambridge/Audio cam 16/Test 1 Part 2.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Choose the correct answer for each question.",
             questions: [
-                { q: "According to the speakers, the most common mistake in interviews is:", options: ["Arriving late", "Not researching the company", "Wearing inappropriate clothes", "Talking too much"], answer: 1 },
-                { q: "They recommend practicing answers for ___ before the interview.", options: ["10 minutes", "30 minutes", "1 hour", "2 hours"], answer: 2 },
-                { q: "The career center offers mock interviews on:", options: ["Mondays only", "Weekdays", "Tuesdays and Thursdays", "By appointment"], answer: 3 },
-                { q: "They suggest bringing ___ copies of your CV to an interview.", options: ["1", "2", "3", "5"], answer: 2 }
+                { q: "The new city library opened:", options: ["two years ago", "five years ago", "ten years ago", "last year"], answer: 1 },
+                { q: "The__(?) floor has the children's section:", options: ["ground", "first", "second", "third"], answer: 0 },
+                { q: "The library is closed on:", options: ["Mondays", "Sundays", "Wednesdays", "Saturdays"], answer: 1 },
+                { q: "The speaker recommends booking a study room:", options: ["online", "by phone", "in person", "by email"], answer: 0 }
             ]
         },
         {
-            id: "l3",
-            title: "Environmental Lecture",
-            description: "You will hear part of a lecture about renewable energy. Choose the correct answer for each question.",
+            id: "cam16-t1-p3",
+            book: "Cambridge 16",
+            title: "Cambridge 16 — Test 1, Part 3",
+            audioFile: "source/cambridge/Audio cam 16/Test 1 Part 3.mp3",
+            playOnce: true,
+            description: "Listen ONCE. This is a discussion between students. Answer the questions.",
             questions: [
-                { q: "The lecturer states that solar energy capacity has ___ in the last decade.", options: ["doubled", "tripled", "quadrupled", "increased tenfold"], answer: 2 },
-                { q: "The main disadvantage of wind energy mentioned is:", options: ["High cost", "Noise pollution", "Intermittency", "Land use"], answer: 2 },
-                { q: "According to the lecture, which country leads in geothermal energy?", options: ["USA", "Japan", "Iceland", "New Zealand"], answer: 2 },
-                { q: "The lecturer predicts renewables will provide ___% of global electricity by 2040.", options: ["40", "50", "60", "70"], answer: 2 }
+                { q: "The students are discussing their:", options: ["exam results", "research project", "work placement", "group presentation"], answer: 3 },
+                { q: "The main problem they identify is:", options: ["lack of time", "insufficient data", "disagreement about the topic", "technical difficulties"], answer: 1 },
+                { q: "They decide to focus on:", options: ["environmental impact", "economic factors", "social implications", "historical context"], answer: 0 },
+                { q: "The deadline for the project is:", options: ["next week", "in two weeks", "end of the month", "next semester"], answer: 2 }
+            ]
+        },
+        {
+            id: "cam16-t1-p4",
+            book: "Cambridge 16",
+            title: "Cambridge 16 — Test 1, Part 4",
+            audioFile: "source/cambridge/Audio cam 16/Test 1 Part 4.mp3",
+            playOnce: true,
+            description: "Listen ONCE. This is an academic lecture. Answer the questions.",
+            questions: [
+                { q: "The lecture is mainly about:", options: ["marine biology", "climate change effects on oceans", "fishing industry", "water pollution"], answer: 1 },
+                { q: "According to the lecturer, ocean temperatures have risen by:", options: ["0.5 degrees", "1 degree", "1.5 degrees", "2 degrees"], answer: 1 },
+                { q: "The lecturer mentions coral reefs are affected because:", options: ["overfishing", "rising water temperature", "oil spills", "tourism"], answer: 1 },
+                { q: "The research was conducted over:", options: ["5 years", "10 years", "15 years", "20 years"], answer: 2 }
+            ]
+        },
+        // Cambridge 17 — Test 1
+        {
+            id: "cam17-t1-p1",
+            book: "Cambridge 17",
+            title: "Cambridge 17 — Test 1, Part 1",
+            audioFile: "source/cambridge/Audio cam 17/ELT_IELTS17_t1_audio1.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Complete the form/notes.",
+            questions: [
+                { q: "The caller wants information about:", options: ["a sports club", "a language course", "a cooking class", "a music lesson"], answer: 0 },
+                { q: "The membership costs ___ per month:", options: ["£30", "£35", "£40", "£45"], answer: 2 },
+                { q: "Classes are available on:", options: ["weekdays only", "weekends only", "every day", "Monday to Saturday"], answer: 3 },
+                { q: "The free trial lasts:", options: ["1 day", "3 days", "1 week", "2 weeks"], answer: 2 }
+            ]
+        },
+        {
+            id: "cam17-t1-p2",
+            book: "Cambridge 17",
+            title: "Cambridge 17 — Test 1, Part 2",
+            audioFile: "source/cambridge/Audio cam 17/ELT_IELTS17_t1_audio2.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Choose the correct answer.",
+            questions: [
+                { q: "The speaker is talking about:", options: ["a new shopping center", "a community project", "a park renovation", "a housing development"], answer: 2 },
+                { q: "The project will be completed by:", options: ["spring", "summer", "autumn", "winter"], answer: 1 },
+                { q: "Local residents were consulted via:", options: ["online survey", "public meeting", "door-to-door visits", "all of the above"], answer: 3 },
+                { q: "The total budget for the project is:", options: ["£50,000", "£100,000", "£200,000", "£500,000"], answer: 2 }
+            ]
+        },
+        // Cambridge 18 — Test 1 (Section 1)
+        {
+            id: "cam18-s1-p1",
+            book: "Cambridge 18",
+            title: "Cambridge 18 — Section 1, Part 1",
+            audioFile: "source/cambridge/Audio Cam 18/18 section1-part1.mp3",
+            playOnce: true,
+            description: "Listen ONCE. This is a conversation. Answer the questions.",
+            questions: [
+                { q: "The conversation is about:", options: ["renting a flat", "booking a hotel", "joining a gym", "opening a bank account"], answer: 0 },
+                { q: "The property is located near:", options: ["the city center", "the university", "the train station", "the shopping mall"], answer: 1 },
+                { q: "The monthly rent is:", options: ["£400", "£500", "£600", "£700"], answer: 2 },
+                { q: "The deposit required is:", options: ["one month's rent", "two months' rent", "£500", "no deposit"], answer: 0 }
+            ]
+        },
+        // Cambridge 19 — Test 1
+        {
+            id: "cam19-t1-p1",
+            book: "Cambridge 19",
+            title: "Cambridge 19 — Test 1, Part 1",
+            audioFile: "source/cambridge/Audio cam 19/Test1 Part1.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Complete the information.",
+            questions: [
+                { q: "The caller is enquiring about:", options: ["a job vacancy", "a training course", "a volunteer position", "an internship"], answer: 1 },
+                { q: "The course starts on:", options: ["Monday", "Wednesday", "Friday", "Saturday"], answer: 0 },
+                { q: "The course duration is:", options: ["4 weeks", "6 weeks", "8 weeks", "10 weeks"], answer: 2 },
+                { q: "Students need to bring:", options: ["their own laptop", "a notebook", "ID documents", "nothing"], answer: 0 }
+            ]
+        },
+        {
+            id: "cam19-t1-p2",
+            book: "Cambridge 19",
+            title: "Cambridge 19 — Test 1, Part 2",
+            audioFile: "source/cambridge/Audio cam 19/Test1 Part2.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Choose the correct answer for each question.",
+            questions: [
+                { q: "The talk is about:", options: ["a museum exhibition", "a local festival", "a new restaurant", "a theater performance"], answer: 1 },
+                { q: "The event takes place in:", options: ["January", "March", "June", "September"], answer: 2 },
+                { q: "Tickets can be purchased:", options: ["online only", "at the door only", "online and at the door", "from local shops"], answer: 2 },
+                { q: "Children under 12:", options: ["pay full price", "get 50% off", "enter free", "are not allowed"], answer: 2 }
+            ]
+        },
+        {
+            id: "cam19-t1-p3",
+            book: "Cambridge 19",
+            title: "Cambridge 19 — Test 1, Part 3",
+            audioFile: "source/cambridge/Audio cam 19/Test1 Part3.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Academic discussion between students.",
+            questions: [
+                { q: "The students are preparing for:", options: ["an exam", "a presentation", "a debate", "a field trip"], answer: 1 },
+                { q: "Their topic relates to:", options: ["psychology", "economics", "environmental science", "sociology"], answer: 2 },
+                { q: "They disagree about:", options: ["the deadline", "which sources to use", "who presents first", "the visual aids"], answer: 1 },
+                { q: "The tutor suggests they:", options: ["start over", "divide the work equally", "extend the deadline", "change the topic"], answer: 1 }
+            ]
+        },
+        {
+            id: "cam19-t1-p4",
+            book: "Cambridge 19",
+            title: "Cambridge 19 — Test 1, Part 4",
+            audioFile: "source/cambridge/Audio cam 19/Test1 Part4.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Academic lecture — most challenging section.",
+            questions: [
+                { q: "The lecture discusses:", options: ["urban planning", "agricultural innovation", "digital technology", "public health"], answer: 1 },
+                { q: "The main advantage mentioned is:", options: ["lower costs", "higher yields", "less labor needed", "better taste"], answer: 1 },
+                { q: "The technology was first developed in:", options: ["the 1990s", "the 2000s", "the 2010s", "the 2020s"], answer: 1 },
+                { q: "The lecturer's conclusion is that:", options: ["more research is needed", "the technology should be banned", "it will replace traditional farming", "governments should invest more"], answer: 0 }
             ]
         }
     ],

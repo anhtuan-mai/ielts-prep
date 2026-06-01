@@ -60,7 +60,7 @@ function generateDailyPlan(dateStr) {
         {
             id: `${dateStr}-listening`,
             skill: 'listening',
-            name: 'Listening Practice (30 min)',
+            name: `Listening — ${IELTS_DATA.listening[dayIndex % IELTS_DATA.listening.length].title} (30 min)`,
             type: 'listening',
             duration: 30,
             dataIndex: dayIndex % IELTS_DATA.listening.length
@@ -352,22 +352,56 @@ function submitReading(taskId, totalQuestions) {
     <button class="btn-next" onclick="showView('study')">← Back to Tasks</button>`;
 }
 
+let listeningAudio = null;
+let listeningPlayed = {};
+
 function renderListening(task) {
     const data = IELTS_DATA.listening[task.dataIndex];
     const container = document.getElementById('practice-content');
+    const playedKey = `played_${data.id}`;
+    const alreadyPlayed = localStorage.getItem(playedKey) === 'true';
 
     let html = `<div class="question-block">
-        <h3>${data.title}</h3>
-        <p class="speaking-prompt">${data.description}</p>
-        <div class="feedback info">Note: In the real IELTS, you would listen to an audio recording. For practice, read the question carefully and select the most logical answer based on the context described.</div>`;
+        <span class="book-badge">${data.book || 'IELTS'}</span>
+        <h3>${data.title}</h3>`;
+
+    // Audio player with play-once restriction
+    if (data.audioFile) {
+        html += `<div class="audio-warning">
+            <strong>⚠ Real exam condition:</strong> You can only play this audio <strong>ONCE</strong>.
+            Read the questions first, then press Play when ready. No pausing, no rewinding.
+        </div>`;
+
+        if (alreadyPlayed) {
+            html += `<div class="audio-player">
+                <span class="audio-played-badge">ALREADY PLAYED</span>
+                <p style="margin-top:8px;font-size:0.8rem;color:#94a3b8">You have already listened to this audio. Answer from memory.</p>
+            </div>`;
+        } else {
+            html += `<div class="audio-player" id="audio-player">
+                <button class="play-btn" id="play-btn" onclick="playListeningAudio('${data.audioFile}', '${playedKey}')">▶</button>
+                <div class="audio-status" id="audio-status">Ready — press Play when you've read the questions</div>
+                <div class="audio-progress"><div class="audio-progress-fill" id="audio-progress"></div></div>
+                <div class="audio-time" id="audio-time">0:00 / --:--</div>
+            </div>`;
+        }
+    }
+
+    html += `<p style="margin:12px 0;font-size:0.85rem;color:var(--muted)">${data.description}</p>`;
 
     data.questions.forEach((q, i) => {
-        html += `<p style="margin-top:16px"><strong>Q${i+1}:</strong> ${q.q}</p>
-        <ul class="options" id="q-${i}">`;
-        q.options.forEach((opt, j) => {
-            html += `<li onclick="selectOption(${i}, ${j}, ${q.answer})">${opt}</li>`;
-        });
-        html += `</ul>`;
+        html += `<p style="margin-top:16px"><strong>Q${i+1}:</strong> ${q.q}</p>`;
+        if (q.options) {
+            html += `<ul class="options" id="q-${i}">`;
+            q.options.forEach((opt, j) => {
+                html += `<li onclick="selectOption(${i}, ${j}, ${q.answer})">${opt}</li>`;
+            });
+            html += `</ul>`;
+        } else if (q.type === 'fill') {
+            html += `<input type="text" class="writing-area" style="min-height:auto;padding:8px 12px"
+                placeholder="Type your answer..." id="fill-${i}"
+                oninput="currentAnswers[${i}] = this.value">`;
+        }
     });
 
     html += `</div>
@@ -376,18 +410,84 @@ function renderListening(task) {
     container.innerHTML = html;
 }
 
+function playListeningAudio(audioFile, playedKey) {
+    const btn = document.getElementById('play-btn');
+    const status = document.getElementById('audio-status');
+    const progress = document.getElementById('audio-progress');
+    const timeDisplay = document.getElementById('audio-time');
+
+    // Disable play button immediately
+    btn.disabled = true;
+    btn.textContent = '⏵';
+    status.textContent = 'Loading audio...';
+
+    listeningAudio = new Audio(audioFile);
+    listeningAudio.addEventListener('canplay', () => {
+        status.textContent = '🔊 Playing — listen carefully, no replay!';
+        listeningAudio.play();
+    });
+
+    listeningAudio.addEventListener('timeupdate', () => {
+        const pct = (listeningAudio.currentTime / listeningAudio.duration) * 100;
+        progress.style.width = pct + '%';
+        const cur = formatTime(listeningAudio.currentTime);
+        const dur = formatTime(listeningAudio.duration);
+        timeDisplay.textContent = `${cur} / ${dur}`;
+    });
+
+    listeningAudio.addEventListener('ended', () => {
+        status.textContent = '✓ Audio finished — answer the questions now';
+        btn.textContent = '✓';
+        localStorage.setItem(playedKey, 'true');
+    });
+
+    listeningAudio.addEventListener('error', () => {
+        status.textContent = '✗ Audio file not found — check source folder path';
+        btn.disabled = false;
+        btn.textContent = '▶';
+    });
+}
+
+function formatTime(seconds) {
+    if (isNaN(seconds)) return '--:--';
+    const m = Math.floor(seconds / 60);
+    const s = Math.floor(seconds % 60);
+    return `${m}:${String(s).padStart(2, '0')}`;
+}
+
 function submitListening(taskId, totalQuestions) {
+    // Stop audio if still playing
+    if (listeningAudio) {
+        listeningAudio.pause();
+        listeningAudio = null;
+    }
+
     let correct = 0;
     const data = IELTS_DATA.listening[getTodayLog().tasks.find(t => t.id === taskId).dataIndex];
 
     data.questions.forEach((q, i) => {
-        const options = document.querySelectorAll(`#q-${i} li`);
-        options.forEach((li, j) => {
-            li.style.pointerEvents = 'none';
-            if (j === q.answer) li.classList.add('correct');
-            if (currentAnswers[i] === j && j !== q.answer) li.classList.add('wrong');
-        });
-        if (currentAnswers[i] === q.answer) correct++;
+        if (q.options) {
+            const options = document.querySelectorAll(`#q-${i} li`);
+            options.forEach((li, j) => {
+                li.style.pointerEvents = 'none';
+                if (j === q.answer) li.classList.add('correct');
+                if (currentAnswers[i] === j && j !== q.answer) li.classList.add('wrong');
+            });
+            if (currentAnswers[i] === q.answer) correct++;
+        } else if (q.type === 'fill') {
+            const input = document.getElementById(`fill-${i}`);
+            const userAnswer = (currentAnswers[i] || '').trim().toLowerCase();
+            const correctAnswer = q.answer.toLowerCase();
+            if (userAnswer === correctAnswer) {
+                input.style.borderColor = 'var(--success)';
+                input.style.background = '#dcfce7';
+                correct++;
+            } else {
+                input.style.borderColor = 'var(--danger)';
+                input.style.background = '#fee2e2';
+                input.insertAdjacentHTML('afterend', `<p style="font-size:0.8rem;color:var(--success);margin-top:4px">Correct answer: ${q.answer}</p>`);
+            }
+        }
     });
 
     const score = Math.round((correct / totalQuestions) * 100);
@@ -400,6 +500,7 @@ function submitListening(taskId, totalQuestions) {
     const btn = document.querySelector('.btn-submit');
     btn.outerHTML = `<div class="feedback ${score >= 70 ? 'correct' : 'wrong'}">
         Score: ${correct}/${totalQuestions} (${score}%)
+        ${score >= 70 ? '— Good listening!' : '— Practice more with the next audio.'}
     </div>
     <button class="btn-next" onclick="showView('study')">← Back to Tasks</button>`;
 }

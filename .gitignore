@@ -1,1 +1,4 @@
 node_modules/
+source/cambridge/*.pdf
+source/cambridge/Audio*/
+source/simon/*.pdf
