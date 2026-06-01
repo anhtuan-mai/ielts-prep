@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Prep - 74 Days to Band 7.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Dad Dashboard (default view) -->
+        <section id="dashboard" class="view active">
+            <header class="dash-header">
+                <h1>IELTS Prep Tracker</h1>
+                <div class="countdown">
+                    <span id="days-left">--</span> days to exam
+                </div>
+                <div class="exam-date">Exam: Aug 15, 2026</div>
+            </header>
+
+            <div class="stats-grid">
+                <div class="stat-card streak">
+                    <div class="stat-icon">🔥</div>
+                    <div class="stat-value" id="streak-count">0</div>
+                    <div class="stat-label">Day Streak</div>
+                </div>
+                <div class="stat-card today">
+                    <div class="stat-icon">✓</div>
+                    <div class="stat-value" id="today-done">0/0</div>
+                    <div class="stat-label">Today's Tasks</div>
+                </div>
+                <div class="stat-card band">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-value" id="predicted-band">--</div>
+                    <div class="stat-label">Predicted Band</div>
+                </div>
+            </div>
+
+            <div class="weekly-chart">
+                <h3>This Week</h3>
+                <div id="week-bars" class="week-bars"></div>
+            </div>
+
+            <div class="skill-breakdown">
+                <h3>Skill Progress</h3>
+                <div class="skill-row"><span>Reading</span><div class="bar"><div class="fill" id="bar-reading"></div></div><span id="pct-reading">0%</span></div>
+                <div class="skill-row"><span>Listening</span><div class="bar"><div class="fill" id="bar-listening"></div></div><span id="pct-listening">0%</span></div>
+                <div class="skill-row"><span>Writing</span><div class="bar"><div class="fill" id="bar-writing"></div></div><span id="pct-writing">0%</span></div>
+                <div class="skill-row"><span>Speaking</span><div class="bar"><div class="fill" id="bar-speaking"></div></div><span id="pct-speaking">0%</span></div>
+            </div>
+
+            <button class="btn-primary" onclick="showView('study')">Start Today's Study</button>
+        </section>
+
+        <!-- Study View (Son's daily tasks) -->
+        <section id="study" class="view">
+            <header class="study-header">
+                <button class="btn-back" onclick="showView('dashboard')">← Dashboard</button>
+                <h2>Today's Plan</h2>
+                <div class="study-timer" id="study-timer">0:00:00</div>
+            </header>
+
+            <div id="task-list" class="task-list"></div>
+
+            <div class="study-actions">
+                <button class="btn-secondary" onclick="toggleTimer()">⏱ Start/Pause Timer</button>
+            </div>
+        </section>
+
+        <!-- Practice View (actual exercises) -->
+        <section id="practice" class="view">
+            <header class="practice-header">
+                <button class="btn-back" onclick="showView('study')">← Tasks</button>
+                <h2 id="practice-title">Practice</h2>
+            </header>
+            <div id="practice-content" class="practice-content"></div>
+        </section>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
