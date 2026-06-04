@@ -345,7 +345,7 @@ Cities are adapting to the new reality. Commercial real estate in traditional bu
             id: "cam16-t1-p1",
             book: "Cambridge 16",
             title: "Cambridge 16 — Test 1, Part 1",
-            audioFile: "source/cambridge/Audio cam 16/Test 1 Part 1.mp3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test.1.Part.1.mp3",
             playOnce: true,
             description: "Listen to the audio ONCE only (like the real exam). Answer the questions while listening.",
             questions: [
@@ -359,7 +359,7 @@ Cities are adapting to the new reality. Commercial real estate in traditional bu
             id: "cam16-t1-p2",
             book: "Cambridge 16",
             title: "Cambridge 16 — Test 1, Part 2",
-            audioFile: "source/cambridge/Audio cam 16/Test 1 Part 2.mp3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test.1.Part.2.mp3",
             playOnce: true,
             description: "Listen ONCE. Choose the correct answer for each question.",
             questions: [
@@ -373,7 +373,7 @@ Cities are adapting to the new reality. Commercial real estate in traditional bu
             id: "cam16-t1-p3",
             book: "Cambridge 16",
             title: "Cambridge 16 — Test 1, Part 3",
-            audioFile: "source/cambridge/Audio cam 16/Test 1 Part 3.mp3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test.1.Part.3.mp3",
             playOnce: true,
             description: "Listen ONCE. This is a discussion between students. Answer the questions.",
             questions: [
@@ -387,7 +387,7 @@ Cities are adapting to the new reality. Commercial real estate in traditional bu
             id: "cam16-t1-p4",
             book: "Cambridge 16",
             title: "Cambridge 16 — Test 1, Part 4",
-            audioFile: "source/cambridge/Audio cam 16/Test 1 Part 4.mp3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test.1.Part.4.mp3",
             playOnce: true,
             description: "Listen ONCE. This is an academic lecture. Answer the questions.",
             questions: [
@@ -402,7 +402,7 @@ Cities are adapting to the new reality. Commercial real estate in traditional bu
             id: "cam17-t1-p1",
             book: "Cambridge 17",
             title: "Cambridge 17 — Test 1, Part 1",
-            audioFile: "source/cambridge/Audio cam 17/ELT_IELTS17_t1_audio1.mp3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/ELT_IELTS17_t1_audio1.mp3",
             playOnce: true,
             description: "Listen ONCE. Complete the form/notes.",
             questions: [
@@ -416,7 +416,7 @@ Cities are adapting to the new reality. Commercial real estate in traditional bu
             id: "cam17-t1-p2",
             book: "Cambridge 17",
             title: "Cambridge 17 — Test 1, Part 2",
-            audioFile: "source/cambridge/Audio cam 17/ELT_IELTS17_t1_audio2.mp3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/ELT_IELTS17_t1_audio2.mp3",
             playOnce: true,
             description: "Listen ONCE. Choose the correct answer.",
             questions: [
@@ -431,7 +431,7 @@ Cities are adapting to the new reality. Commercial real estate in traditional bu
             id: "cam18-s1-p1",
             book: "Cambridge 18",
             title: "Cambridge 18 — Section 1, Part 1",
-            audioFile: "source/cambridge/Audio Cam 18/18 section1-part1.mp3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/18.section1-part1.mp3",
             playOnce: true,
             description: "Listen ONCE. This is a conversation. Answer the questions.",
             questions: [
@@ -446,7 +446,7 @@ Cities are adapting to the new reality. Commercial real estate in traditional bu
             id: "cam19-t1-p1",
             book: "Cambridge 19",
             title: "Cambridge 19 — Test 1, Part 1",
-            audioFile: "source/cambridge/Audio cam 19/Test1 Part1.mp3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test1.Part1.mp3",
             playOnce: true,
             description: "Listen ONCE. Complete the information.",
             questions: [
@@ -460,7 +460,7 @@ Cities are adapting to the new reality. Commercial real estate in traditional bu
             id: "cam19-t1-p2",
             book: "Cambridge 19",
             title: "Cambridge 19 — Test 1, Part 2",
-            audioFile: "source/cambridge/Audio cam 19/Test1 Part2.mp3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test1.Part2.mp3",
             playOnce: true,
             description: "Listen ONCE. Choose the correct answer for each question.",
             questions: [
@@ -474,7 +474,7 @@ Cities are adapting to the new reality. Commercial real estate in traditional bu
             id: "cam19-t1-p3",
             book: "Cambridge 19",
             title: "Cambridge 19 — Test 1, Part 3",
-            audioFile: "source/cambridge/Audio cam 19/Test1 Part3.mp3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test1.Part3.mp3",
             playOnce: true,
             description: "Listen ONCE. Academic discussion between students.",
             questions: [
@@ -488,7 +488,7 @@ Cities are adapting to the new reality. Commercial real estate in traditional bu
             id: "cam19-t1-p4",
             book: "Cambridge 19",
             title: "Cambridge 19 — Test 1, Part 4",
-            audioFile: "source/cambridge/Audio cam 19/Test1 Part4.mp3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test1.Part4.mp3",
             playOnce: true,
             description: "Listen ONCE. Academic lecture — most challenging section.",
             questions: [
