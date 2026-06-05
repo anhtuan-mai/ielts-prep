@@ -182,6 +182,7 @@ function showView(viewId) {
 
     if (viewId === 'dashboard') renderDashboard();
     if (viewId === 'study') renderStudy();
+    if (viewId === 'report') renderReport();
 }
 
 // Render Dashboard
@@ -229,7 +230,233 @@ function renderWeekBars() {
     }
 }
 
-// Render Study (task list)
+// Dad's Report — daily summary + performance insights + parent tips
+function renderReport() {
+    const container = document.getElementById('report-content');
+    const logs = state.dailyLogs;
+    const dates = Object.keys(logs).sort().reverse(); // newest first
+
+    if (dates.length === 0) {
+        container.innerHTML = '<p style="text-align:center;color:var(--muted);padding:40px 16px">No study data yet. Your son needs to complete some tasks first.</p>';
+        return;
+    }
+
+    // --- Compute stats ---
+    const skillScores = { reading: [], listening: [], writing: [], speaking: [] };
+    const skillDone = { reading: 0, listening: 0, writing: 0, speaking: 0 };
+    const skillTotal = { reading: 0, listening: 0, writing: 0, speaking: 0 };
+    let totalDays = 0, activeDays = 0, totalTasks = 0, totalCompleted = 0;
+
+    dates.forEach(d => {
+        const log = logs[d];
+        totalDays++;
+        const done = log.completed ? log.completed.length : 0;
+        const total = log.tasks ? log.tasks.length : 6;
+        if (done > 0) activeDays++;
+        totalTasks += total;
+        totalCompleted += done;
+
+        if (log.tasks) {
+            log.tasks.forEach(t => {
+                const skill = t.skill === 'reading' && t.type === 'vocab' ? 'reading' : t.skill;
+                if (skillTotal[skill] !== undefined) {
+                    skillTotal[skill]++;
+                    if (log.completed && log.completed.includes(t.id)) {
+                        skillDone[skill]++;
+                        if (log.scores && log.scores[t.id] !== undefined) {
+                            skillScores[skill].push(log.scores[t.id]);
+                        }
+                    }
+                }
+            });
+        }
+    });
+
+    // Average scores per skill
+    const avgScore = skill => {
+        const s = skillScores[skill];
+        return s.length > 0 ? Math.round(s.reduce((a, b) => a + b, 0) / s.length) : null;
+    };
+
+    const readingAvg = avgScore('reading');
+    const listeningAvg = avgScore('listening');
+    const writingAvg = avgScore('writing');
+    const speakingAvg = avgScore('speaking');
+
+    // Find weakest skill
+    const skillAvgs = [
+        { skill: 'Reading', avg: readingAvg },
+        { skill: 'Listening', avg: listeningAvg },
+        { skill: 'Writing', avg: writingAvg },
+        { skill: 'Speaking', avg: speakingAvg }
+    ].filter(s => s.avg !== null);
+
+    const weakest = skillAvgs.length > 0 ? skillAvgs.reduce((a, b) => a.avg < b.avg ? a : b) : null;
+    const strongest = skillAvgs.length > 0 ? skillAvgs.reduce((a, b) => a.avg > b.avg ? a : b) : null;
+
+    // Completion rate
+    const completionRate = totalTasks > 0 ? Math.round((totalCompleted / totalTasks) * 100) : 0;
+
+    // --- Build HTML ---
+    let html = '';
+
+    // Overview card
+    html += `<div class="report-card">
+        <h3>Overview</h3>
+        <div class="report-stats">
+            <div class="report-stat">
+                <span class="report-stat-value">${activeDays}</span>
+                <span class="report-stat-label">Active Days</span>
+            </div>
+            <div class="report-stat">
+                <span class="report-stat-value">${totalCompleted}</span>
+                <span class="report-stat-label">Tasks Done</span>
+            </div>
+            <div class="report-stat">
+                <span class="report-stat-value">${completionRate}%</span>
+                <span class="report-stat-label">Completion</span>
+            </div>
+            <div class="report-stat">
+                <span class="report-stat-value">${calculateStreak()}</span>
+                <span class="report-stat-label">Streak</span>
+            </div>
+        </div>
+    </div>`;
+
+    // Skill Performance card
+    html += `<div class="report-card">
+        <h3>Skill Performance</h3>
+        <div class="report-skills">`;
+
+    [
+        { name: 'Reading', avg: readingAvg, done: skillDone.reading, total: skillTotal.reading, icon: '📖' },
+        { name: 'Listening', avg: listeningAvg, done: skillDone.listening, total: skillTotal.listening, icon: '🎧' },
+        { name: 'Writing', avg: writingAvg, done: skillDone.writing, total: skillTotal.writing, icon: '✍️' },
+        { name: 'Speaking', avg: speakingAvg, done: skillDone.speaking, total: skillTotal.speaking, icon: '🗣️' }
+    ].forEach(s => {
+        const pct = s.avg !== null ? s.avg : 0;
+        const color = pct >= 80 ? '#22c55e' : pct >= 60 ? '#eab308' : pct > 0 ? '#ef4444' : '#475569';
+        html += `<div class="report-skill-row">
+            <span class="report-skill-icon">${s.icon}</span>
+            <div class="report-skill-info">
+                <div class="report-skill-name">${s.name} <span style="color:${color};font-weight:700">${s.avg !== null ? s.avg + '%' : '--'}</span></div>
+                <div class="report-skill-bar"><div style="width:${pct}%;background:${color};height:100%;border-radius:4px"></div></div>
+                <div class="report-skill-meta">${s.done}/${s.total} tasks completed</div>
+            </div>
+        </div>`;
+    });
+
+    html += `</div></div>`;
+
+    // Focus Areas & Parent Tips
+    html += `<div class="report-card report-tips">
+        <h3>💡 Focus Areas & Parent Tips</h3>`;
+
+    if (weakest && weakest.avg < 70) {
+        html += `<div class="report-tip warn">
+            <strong>⚠️ Needs work: ${weakest.skill} (${weakest.avg}%)</strong>
+            <p>${getParentTip(weakest.skill, 'weak')}</p>
+        </div>`;
+    }
+    if (strongest && strongest.avg >= 70) {
+        html += `<div class="report-tip good">
+            <strong>✅ Strong: ${strongest.skill} (${strongest.avg}%)</strong>
+            <p>${getParentTip(strongest.skill, 'strong')}</p>
+        </div>`;
+    }
+    if (completionRate < 50) {
+        html += `<div class="report-tip warn">
+            <strong>⚠️ Low completion rate (${completionRate}%)</strong>
+            <p>Try to encourage finishing at least 3 of 6 daily tasks to maintain the streak. Even 20 minutes per day makes a difference.</p>
+        </div>`;
+    }
+    if (calculateStreak() >= 3) {
+        html += `<div class="report-tip good">
+            <strong>🔥 ${calculateStreak()}-day streak!</strong>
+            <p>Great consistency! Praise the daily habit — consistency matters more than perfection for IELTS.</p>
+        </div>`;
+    }
+    if (skillAvgs.length === 0) {
+        html += `<div class="report-tip">
+            <strong>📝 Not enough data yet</strong>
+            <p>Once your son completes a few tasks, you'll see performance breakdown and personalised advice here.</p>
+        </div>`;
+    }
+    html += `</div>`;
+
+    // Daily Log
+    html += `<div class="report-card">
+        <h3>📅 Daily Activity Log</h3>
+        <div class="report-log">`;
+
+    dates.slice(0, 14).forEach(d => {
+        const log = logs[d];
+        const done = log.completed ? log.completed.length : 0;
+        const total = log.tasks ? log.tasks.length : 6;
+        const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+        const dayName = new Date(d + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+        const isToday = d === today();
+
+        html += `<div class="report-day ${pct >= 50 ? 'active' : 'missed'} ${isToday ? 'today' : ''}">
+            <div class="report-day-header">
+                <span class="report-day-name">${isToday ? '📍 Today' : dayName}</span>
+                <span class="report-day-score">${done}/${total} tasks ${pct >= 80 ? '✅' : pct > 0 ? '🟡' : '❌'}</span>
+            </div>`;
+
+        // Show task details
+        if (log.tasks && done > 0) {
+            html += '<div class="report-day-tasks">';
+            log.tasks.forEach(t => {
+                const isDone = log.completed && log.completed.includes(t.id);
+                const score = log.scores && log.scores[t.id] !== undefined ? log.scores[t.id] + '%' : '';
+                if (isDone) {
+                    html += `<div class="report-task-item done">
+                        <span>✓ ${t.name.replace(/ \(\d+ min\)/, '')}</span>
+                        ${score ? `<span class="report-task-score">${score}</span>` : ''}
+                    </div>`;
+                }
+            });
+            // Show skipped tasks
+            const skipped = log.tasks.filter(t => !log.completed || !log.completed.includes(t.id));
+            if (skipped.length > 0 && done > 0) {
+                html += `<div class="report-task-skipped">${skipped.length} task${skipped.length > 1 ? 's' : ''} skipped</div>`;
+            }
+            html += '</div>';
+        }
+
+        html += '</div>';
+    });
+
+    if (dates.length > 14) {
+        html += `<p style="text-align:center;color:var(--muted);font-size:0.8rem;margin-top:8px">Showing last 14 days</p>`;
+    }
+
+    html += `</div></div>`;
+
+    container.innerHTML = html;
+}
+
+function getParentTip(skill, type) {
+    const tips = {
+        Reading: {
+            weak: "Help by reading English articles together (BBC, National Geographic). Discuss the main ideas. Time reading exercises to build speed — aim for 20 minutes per passage.",
+            strong: "Reading is a strength! Encourage tackling harder texts (academic journals, The Economist). Focus practice time on weaker skills instead."
+        },
+        Listening: {
+            weak: "Play English podcasts or news during car rides (BBC 6 Minute English is great). Watch English shows without subtitles. The key is daily exposure to different accents.",
+            strong: "Good listening skills! Keep it up with varied content — TED Talks, documentaries. Shift extra practice time to weaker areas."
+        },
+        Writing: {
+            weak: "Writing needs structure practice. Help by reviewing essays together — check if each paragraph has a clear topic sentence. Use the PEEL method: Point, Evidence, Explain, Link.",
+            strong: "Writing is solid! Encourage experimenting with more complex sentence structures and academic vocabulary to push toward Band 7.5."
+        },
+        Speaking: {
+            weak: "Practice speaking English at home — even 10 minutes of dinner conversation in English helps. Ask follow-up questions like 'Why do you think that?' to build fluency.",
+            strong: "Speaking confidence is building! Challenge with debate topics or have them explain complex ideas in English. Record and listen back together."
+        }
+    };
+    return tips[skill] ? tips[skill][type] : '';
+}
 function renderStudy() {
     const log = getTodayLog();
     const container = document.getElementById('task-list');

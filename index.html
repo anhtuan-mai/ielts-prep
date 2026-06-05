@@ -49,7 +49,19 @@
                 <div class="skill-row"><span>Speaking</span><div class="bar"><div class="fill" id="bar-speaking"></div></div><span id="pct-speaking">0%</span></div>
             </div>
 
-            <button class="btn-primary" onclick="showView('study')">Start Today's Study</button>
+            <div class="dash-buttons">
+                <button class="btn-primary" onclick="showView('study')">Start Today's Study</button>
+                <button class="btn-report" onclick="showView('report')">📊 Dad's Report</button>
+            </div>
+        </section>
+
+        <!-- Dad's Report View -->
+        <section id="report" class="view">
+            <header class="study-header">
+                <button class="btn-back" onclick="showView('dashboard')">← Dashboard</button>
+                <h2>📊 Progress Report</h2>
+            </header>
+            <div id="report-content" class="report-content"></div>
         </section>
 
         <!-- Study View (Son's daily tasks) -->
