@@ -497,6 +497,787 @@ Cities are adapting to the new reality. Commercial real estate in traditional bu
                 { q: "The technology was first developed in:", options: ["the 1990s", "the 2000s", "the 2010s", "the 2020s"], answer: 1 },
                 { q: "The lecturer's conclusion is that:", options: ["more research is needed", "the technology should be banned", "it will replace traditional farming", "governments should invest more"], answer: 0 }
             ]
+        },
+        // Cambridge 16 — Test 2
+        {
+            id: "cam16-t2-p1",
+            book: "Cambridge 16",
+            title: "Cambridge 16 — Test 2, Part 1",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test.2.Part.1.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Complete the notes. Write ONE WORD AND/OR A NUMBER.",
+            questions: [
+                { q: "The woman needs a new ___", type: "fill", answer: "frame" },
+                { q: "Reference number: ___", type: "fill", answer: "195" },
+                { q: "She will arrange ___", type: "fill", answer: "payment" },
+                { q: "The photo is of her ___", type: "fill", answer: "Grandparents" },
+                { q: "She wants to change the ___", type: "fill", answer: "colour" }
+            ]
+        },
+        {
+            id: "cam16-t2-p2",
+            book: "Cambridge 16",
+            title: "Cambridge 16 — Test 2, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test.2.Part.2.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Choose the correct answer.",
+            questions: [
+                { q: "Q11", options: ["A", "B", "C"], answer: 2 },
+                { q: "Q12", options: ["A", "B", "C"], answer: 1 },
+                { q: "Q13", options: ["A", "B", "C"], answer: 0 },
+                { q: "Q14", options: ["A", "B", "C"], answer: 0 }
+            ]
+        },
+        {
+            id: "cam16-t2-p3",
+            book: "Cambridge 16",
+            title: "Cambridge 16 — Test 2, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test.2.Part.3.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Academic discussion. Complete the notes.",
+            questions: [
+                { q: "Topic of the assignment is the ___", type: "fill", answer: "history" },
+                { q: "They need to include examples from ___", type: "fill", answer: "paper" },
+                { q: "The focus should be on ___", type: "fill", answer: "humans" },
+                { q: "Main factor causing difficulty is ___", type: "fill", answer: "stress" },
+                { q: "They will use a ___ to present data", type: "fill", answer: "graph" }
+            ]
+        },
+        {
+            id: "cam16-t2-p4",
+            book: "Cambridge 16",
+            title: "Cambridge 16 — Test 2, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test.2.Part.4.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Academic lecture. Write ONE WORD ONLY.",
+            questions: [
+                { q: "The lecture is about the importance of ___", type: "fill", answer: "creativity" },
+                { q: "Art can be used as a form of ___", type: "fill", answer: "therapy" },
+                { q: "Physical activity improves overall ___", type: "fill", answer: "fitness" },
+                { q: "Maintaining ___ in life is essential", type: "fill", answer: "balance" },
+                { q: "The effects on the ___ are significant", type: "fill", answer: "brain" }
+            ]
+        },
+        // Cambridge 16 — Test 3
+        {
+            id: "cam16-t3-p1",
+            book: "Cambridge 16",
+            title: "Cambridge 16 — Test 3, Part 1",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test.3.Part.1.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Complete the notes. Write ONE WORD AND/OR A NUMBER.",
+            questions: [
+                { q: "They will go to the ___", type: "fill", answer: "park" },
+                { q: "The bag is ___", type: "fill", answer: "blue" },
+                { q: "She needs a ___ number", type: "fill", answer: "reference" },
+                { q: "The child likes the ___", type: "fill", answer: "story" },
+                { q: "Take something in case of ___", type: "fill", answer: "rain" }
+            ]
+        },
+        {
+            id: "cam16-t3-p2",
+            book: "Cambridge 16",
+            title: "Cambridge 16 — Test 3, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test.3.Part.2.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Choose the correct answer.",
+            questions: [
+                { q: "Q13", options: ["A", "B", "C"], answer: 1 },
+                { q: "Q14", options: ["A", "B", "C"], answer: 2 }
+            ]
+        },
+        {
+            id: "cam16-t3-p3",
+            book: "Cambridge 16",
+            title: "Cambridge 16 — Test 3, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test.3.Part.3.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Academic discussion.",
+            questions: [
+                { q: "Q25: The answer is letter", options: ["A", "B", "C", "D", "E", "F", "G"], answer: 6 },
+                { q: "Q26: The answer is letter", options: ["A", "B", "C", "D", "E", "F", "G"], answer: 0 },
+                { q: "Q27: The answer is letter", options: ["A", "B", "C", "D", "E", "F", "G"], answer: 1 },
+                { q: "Q28: The answer is letter", options: ["A", "B", "C", "D", "E", "F", "G"], answer: 0 }
+            ]
+        },
+        {
+            id: "cam16-t3-p4",
+            book: "Cambridge 16",
+            title: "Cambridge 16 — Test 3, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test.3.Part.4.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Academic lecture. Write ONE WORD ONLY.",
+            questions: [
+                { q: "The pottery was made by the speaker's ___", type: "fill", answer: "grandmother" },
+                { q: "The tradition lasted over a ___", type: "fill", answer: "decade" },
+                { q: "They used basic ___", type: "fill", answer: "equipment" },
+                { q: "The impact was largely ___", type: "fill", answer: "economic" },
+                { q: "The design is very ___", type: "fill", answer: "basic" }
+            ]
+        },
+        // Cambridge 16 — Test 4
+        {
+            id: "cam16-t4-p1",
+            book: "Cambridge 16",
+            title: "Cambridge 16 — Test 4, Part 1",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test.4.Part.1.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Complete the notes. Write ONE WORD AND/OR A NUMBER.",
+            questions: [
+                { q: "Date of the event: ___", type: "fill", answer: "28th" },
+                { q: "Number of guests: ___", type: "fill", answer: "550" },
+                { q: "Name of the venue: ___", type: "fill", answer: "Chervil" },
+                { q: "Parking is in the ___", type: "fill", answer: "garage" },
+                { q: "The view overlooks the ___", type: "fill", answer: "garden" }
+            ]
+        },
+        {
+            id: "cam16-t4-p2",
+            book: "Cambridge 16",
+            title: "Cambridge 16 — Test 4, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test.4.Part.2.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Choose the correct answer.",
+            questions: [
+                { q: "Q11", options: ["A", "B", "C"], answer: 0 },
+                { q: "Q13", options: ["A", "B", "C"], answer: 1 },
+                { q: "Q14", options: ["A", "B", "C"], answer: 1 }
+            ]
+        },
+        {
+            id: "cam16-t4-p3",
+            book: "Cambridge 16",
+            title: "Cambridge 16 — Test 4, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test.4.Part.3.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Academic discussion.",
+            questions: [
+                { q: "Q25:", options: ["A", "B", "C"], answer: 2 },
+                { q: "Q26:", options: ["A", "B", "C", "D", "E", "F"], answer: 5 },
+                { q: "Q27:", options: ["A", "B", "C", "D", "E", "F", "G"], answer: 3 },
+                { q: "Q28:", options: ["A", "B", "C", "D", "E", "F", "G"], answer: 4 }
+            ]
+        },
+        {
+            id: "cam16-t4-p4",
+            book: "Cambridge 16",
+            title: "Cambridge 16 — Test 4, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test.4.Part.4.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Academic lecture. Write ONE WORD ONLY.",
+            questions: [
+                { q: "The ___ trade was historically important", type: "fill", answer: "spice" },
+                { q: "The first ___ was established here", type: "fill", answer: "colony" },
+                { q: "Animals were valued for their ___", type: "fill", answer: "fat" },
+                { q: "The ___ of the animal is distinctive", type: "fill", answer: "head" },
+                { q: "Their ___ is graceful", type: "fill", answer: "movement" }
+            ]
+        },
+        // Cambridge 17 — Test 2
+        {
+            id: "cam17-t2-p1",
+            book: "Cambridge 17",
+            title: "Cambridge 17 — Test 2, Part 1",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/ELT_IELTS17_t2_audio1.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Voluntary work in Southoe village. Write ONE WORD ONLY.",
+            questions: [
+                { q: "Help with ___ books (times to be arranged)", type: "fill", answer: "collecting" },
+                { q: "Help needed to keep ___ of books up to date", type: "fill", answer: "records" },
+                { q: "Library is in the ___ Room in the village hall", type: "fill", answer: "West" },
+                { q: "Lunch club: Help by providing ___", type: "fill", answer: "transport" },
+                { q: "Help with hobbies such as ___", type: "fill", answer: "art" },
+                { q: "Next week: Taking Mrs Carroll to ___", type: "fill", answer: "hospital" },
+                { q: "Work in the ___ at Mr Selsbury's house", type: "fill", answer: "garden" },
+                { q: "19 Oct event: ___", type: "fill", answer: "quiz" },
+                { q: "18 Nov dance: checking ___", type: "fill", answer: "tickets" },
+                { q: "31 Dec: designing the ___", type: "fill", answer: "poster" }
+            ]
+        },
+        {
+            id: "cam17-t2-p2",
+            book: "Cambridge 17",
+            title: "Cambridge 17 — Test 2, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/ELT_IELTS17_t2_audio2.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Oniton Hall. Choose the correct answer.",
+            questions: [
+                { q: "Many past owners made changes to:", options: ["A. the gardens", "B. the house", "C. the farm"], answer: 1 },
+                { q: "Sir Edward Downes built Oniton Hall because he wanted:", options: ["A. a place for discussing politics", "B. a place to display his wealth", "C. a place for artists and writers"], answer: 2 },
+                { q: "Visitors can learn about the work of servants from:", options: ["A. audio guides", "B. photographs", "C. people in costume"], answer: 2 },
+                { q: "What is new for children at Oniton Hall?", options: ["A. clothes for dressing up", "B. mini tractors", "C. the adventure playground"], answer: 1 }
+            ]
+        },
+        {
+            id: "cam17-t2-p3",
+            book: "Cambridge 17",
+            title: "Cambridge 17 — Test 2, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/ELT_IELTS17_t2_audio3.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Romeo and Juliet review discussion.",
+            questions: [
+                { q: "The students think Romeo and Juliet is still relevant because:", options: ["A. it illustrates how easily conflict can start", "B. it deals with problems that families experience", "C. it teaches them about relationships"], answer: 2 },
+                { q: "The students found watching Romeo and Juliet in another language:", options: ["A. frustrating", "B. demanding", "C. moving"], answer: 2 },
+                { q: "Why do the students think Shakespeare's plays have international appeal?", options: ["A. The stories are exciting", "B. There are recognisable characters", "C. They can be interpreted in many ways"], answer: 2 }
+            ]
+        },
+        {
+            id: "cam17-t2-p4",
+            book: "Cambridge 17",
+            title: "Cambridge 17 — Test 2, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/ELT_IELTS17_t2_audio4.mp3",
+            playOnce: true,
+            description: "Listen ONCE. The impact of digital technology on Icelandic. Write ONE WORD AND/OR A NUMBER.",
+            questions: [
+                { q: "Icelandic has approximately ___ speakers", type: "fill", answer: "321,000" },
+                { q: "Icelandic has a ___ that is still growing", type: "fill", answer: "vocabulary" },
+                { q: "Icelandic has its own words for concepts such as web browser and ___", type: "fill", answer: "podcast" },
+                { q: "Young speakers are big users of digital technology such as ___", type: "fill", answer: "smartphones" },
+                { q: "Young speakers are becoming ___ very quickly", type: "fill", answer: "bilingual" },
+                { q: "They are having discussions using only English in the ___ at school", type: "fill", answer: "playground" },
+                { q: "They can better identify the content of a ___ in English than Icelandic", type: "fill", answer: "picture" },
+                { q: "Tech companies write little Icelandic because of how complicated its ___ is", type: "fill", answer: "grammar" },
+                { q: "Government worried young Icelanders may lose their ___ as Icelanders", type: "fill", answer: "identity" },
+                { q: "Worried about consequences of children not being ___", type: "fill", answer: "fluent" }
+            ]
+        },
+        // Cambridge 17 — Test 3
+        {
+            id: "cam17-t3-p1",
+            book: "Cambridge 17",
+            title: "Cambridge 17 — Test 3, Part 1",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/ELT_IELTS17_t3_audio1.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Advice on surfing holidays. Write ONE WORD AND/OR A NUMBER.",
+            questions: [
+                { q: "Recommends surfing for ___ holidays in the summer", type: "fill", answer: "family" },
+                { q: "Need to be quite ___", type: "fill", answer: "fit" },
+                { q: "Lahinch has some good quality ___ and surf schools", type: "fill", answer: "hotels" },
+                { q: "Good surf school at ___ beach", type: "fill", answer: "Carrowniskey" },
+                { q: "Surf camp lasts for one ___", type: "fill", answer: "week" },
+                { q: "Can also explore the local ___ by kayak", type: "fill", answer: "bay" },
+                { q: "Best month to go: ___", type: "fill", answer: "September" },
+                { q: "Average temperature in summer: approx ___ degrees", type: "fill", answer: "19" },
+                { q: "Wetsuit and surfboard: ___ euros per day", type: "fill", answer: "30" },
+                { q: "Also advisable to hire ___ for warmth", type: "fill", answer: "boots" }
+            ]
+        },
+        {
+            id: "cam17-t3-p2",
+            book: "Cambridge 17",
+            title: "Cambridge 17 — Test 3, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/ELT_IELTS17_t3_audio2.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Extended hours childcare service. Choose the correct answer.",
+            questions: [
+                { q: "How much does childcare cost for a complete afternoon session per child?", options: ["A. £3.50", "B. £5.70", "C. £7.20"], answer: 2 },
+                { q: "What does the manager say about food?", options: ["A. Children with allergies should bring their own food", "B. Children may bring healthy snacks with them", "C. Children are given a proper meal at 5 p.m."], answer: 2 },
+                { q: "What is different about arrangements in the school holidays?", options: ["A. Children from other schools can attend", "B. Older children can attend", "C. A greater number of children can attend"], answer: 0 }
+            ]
+        },
+        {
+            id: "cam17-t3-p3",
+            book: "Cambridge 17",
+            title: "Cambridge 17 — Test 3, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/ELT_IELTS17_t3_audio3.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Holly's Work Placement Tutorial. Choose the correct answer.",
+            questions: [
+                { q: "Holly has chosen the Orion Stadium placement because:", options: ["A. it involves children", "B. it is outdoors", "C. it sounds like fun"], answer: 1 },
+                { q: "Which aspect of safety does Dr Green emphasise most?", options: ["A. ensuring children stay in the stadium", "B. checking the equipment children will use", "C. removing obstacles in changing rooms"], answer: 0 },
+                { q: "What does Dr Green say about the spectators?", options: ["A. They can be hard to manage", "B. They make useful volunteers", "C. They shouldn't take photographs"], answer: 0 },
+                { q: "What has affected the schedule in the past?", options: ["A. bad weather", "B. an injury", "C. extra time"], answer: 1 }
+            ]
+        },
+        {
+            id: "cam17-t3-p4",
+            book: "Cambridge 17",
+            title: "Cambridge 17 — Test 3, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/ELT_IELTS17_t3_audio4.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Bird Migration Theory. Write ONE WORD ONLY.",
+            questions: [
+                { q: "Birds hibernated underwater or buried themselves in ___", type: "fill", answer: "mud" },
+                { q: "Redstarts experience the loss of ___", type: "fill", answer: "feathers" },
+                { q: "The two species had a similar ___", type: "fill", answer: "shape" },
+                { q: "Charles Morton believed birds fly to the ___ in winter", type: "fill", answer: "moon" },
+                { q: "A stork was killed which had an African spear in its ___", type: "fill", answer: "neck" },
+                { q: "Previously there had been no ___ that storks migrate to Africa", type: "fill", answer: "evidence" },
+                { q: "Little was known about the ___ and journeys of migrating birds", type: "fill", answer: "destinations" },
+                { q: "Small birds were considered incapable of travelling across huge ___", type: "fill", answer: "oceans" },
+                { q: "Ringing depended on what is called the ___ of dead birds", type: "fill", answer: "recovery" },
+                { q: "In 1931, the first ___ to show migration of European birds was printed", type: "fill", answer: "atlas" }
+            ]
+        },
+        // Cambridge 17 — Test 4
+        {
+            id: "cam17-t4-p1",
+            book: "Cambridge 17",
+            title: "Cambridge 17 — Test 4, Part 1",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/IELTS17_t4_audio1.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Easy Life Cleaning Services. Write ONE WORD.",
+            questions: [
+                { q: "Cleaning the ___ throughout the apartment", type: "fill", answer: "floor" },
+                { q: "Every week: Cleaning the ___", type: "fill", answer: "fridge" },
+                { q: "Ironing clothes — ___ only", type: "fill", answer: "shirts" },
+                { q: "Every month: Cleaning all the ___ from the inside", type: "fill", answer: "windows" },
+                { q: "Washing down the ___", type: "fill", answer: "balcony" },
+                { q: "They can organise a plumber or an ___", type: "fill", answer: "electrician" },
+                { q: "Special cleaning for customers allergic to ___", type: "fill", answer: "dust" },
+                { q: "Background check carried out by the ___", type: "fill", answer: "police" },
+                { q: "All cleaners are given ___ for two weeks", type: "fill", answer: "training" },
+                { q: "Customers send a ___ after each visit", type: "fill", answer: "review" }
+            ]
+        },
+        {
+            id: "cam17-t4-p2",
+            book: "Cambridge 17",
+            title: "Cambridge 17 — Test 4, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/ELT_IELTS17_t4_audio2.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Hotel staff retention. Choose the correct answer.",
+            questions: [
+                { q: "Many hotel managers are unaware that staff often leave because of:", options: ["A. a lack of training", "B. long hours", "C. low pay"], answer: 0 },
+                { q: "What is the impact of high staff turnover on managers?", options: ["A. an increased workload", "B. low morale", "C. an inability to meet targets"], answer: 0 },
+                { q: "What mistake should managers always avoid?", options: ["A. failing to treat staff equally", "B. reorganising shifts without warning", "C. neglecting to have enough staff during busy periods"], answer: 0 },
+                { q: "What unexpected benefit did Dunwich Hotel notice?", options: ["A. a fall in customer complaints", "B. an increase in loyalty club membership", "C. a rise in spending per customer"], answer: 2 }
+            ]
+        },
+        {
+            id: "cam17-t4-p3",
+            book: "Cambridge 17",
+            title: "Cambridge 17 — Test 4, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/ELT_IELTS17_t4_audio3.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Discussion about sporting activities and equipment.",
+            questions: [
+                { q: "The table tennis bat — comment about its development:", options: ["A. excessive sweating", "B. mass produced for another purpose", "C. people made their own", "D. often had to be replaced", "E. material was expensive", "F. unpopular among spectators", "G. caused injuries", "H. no one liked it at first"], answer: 1 },
+                { q: "The cricket helmet:", options: ["A. excessive sweating", "B. mass produced for another purpose", "C. people made their own", "D. often had to be replaced", "E. material was expensive", "F. unpopular among spectators", "G. caused injuries", "H. no one liked it at first"], answer: 5 },
+                { q: "The cycle helmet:", options: ["A. excessive sweating", "B. mass produced for another purpose", "C. people made their own", "D. often had to be replaced", "E. material was expensive", "F. unpopular among spectators", "G. caused injuries", "H. no one liked it at first"], answer: 0 },
+                { q: "The golf club:", options: ["A. excessive sweating", "B. mass produced for another purpose", "C. people made their own", "D. often had to be replaced", "E. material was expensive", "F. unpopular among spectators", "G. caused injuries", "H. no one liked it at first"], answer: 3 },
+                { q: "The hockey stick:", options: ["A. excessive sweating", "B. mass produced for another purpose", "C. people made their own", "D. often had to be replaced", "E. material was expensive", "F. unpopular among spectators", "G. caused injuries", "H. no one liked it at first"], answer: 2 },
+                { q: "The football:", options: ["A. excessive sweating", "B. mass produced for another purpose", "C. people made their own", "D. often had to be replaced", "E. material was expensive", "F. unpopular among spectators", "G. caused injuries", "H. no one liked it at first"], answer: 6 }
+            ]
+        },
+        {
+            id: "cam17-t4-p4",
+            book: "Cambridge 17",
+            title: "Cambridge 17 — Test 4, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/ELT_IELTS17_t4_audio4.mp3",
+            playOnce: true,
+            description: "Listen ONCE. Maple syrup production. Write ONE WORD ONLY.",
+            questions: [
+                { q: "Colour described as ___", type: "fill", answer: "golden" },
+                { q: "Very ___ compared to refined sugar", type: "fill", answer: "healthy" },
+                { q: "Best growing conditions and ___ are in Canada", type: "fill", answer: "climate" },
+                { q: "Used hot ___ to heat the sap", type: "fill", answer: "rock" },
+                { q: "Tree trunks may not have the correct ___ until 40 years old", type: "fill", answer: "diameter" },
+                { q: "A ___ carries the sap into a bucket", type: "fill", answer: "tube" },
+                { q: "Large pans are heated by means of a ___", type: "fill", answer: "fire" },
+                { q: "A lot of ___ is produced during evaporation", type: "fill", answer: "steam" },
+                { q: "Sugar sand makes the syrup look ___", type: "fill", answer: "cloudy" },
+                { q: "A huge quantity of sap is needed to make a ___ of maple syrup", type: "fill", answer: "litre" }
+            ]
+        },
+        // Cambridge 18 — All Tests
+        {
+            id: "cam18-t1-p2", book: "Cambridge 18", title: "Cambridge 18 — Test 1, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/18.section1-part2.mp3",
+            playOnce: true, description: "Listen ONCE. Choose the correct answer.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam18-t1-p3", book: "Cambridge 18", title: "Cambridge 18 — Test 1, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/18.section1-part3.mp3",
+            playOnce: true, description: "Listen ONCE. Academic discussion.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam18-t1-p4", book: "Cambridge 18", title: "Cambridge 18 — Test 1, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/18.section1-part4.mp3",
+            playOnce: true, description: "Listen ONCE. Academic lecture.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam18-t2-p1", book: "Cambridge 18", title: "Cambridge 18 — Test 2, Part 1",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/18.section2-part1.mp3",
+            playOnce: true, description: "Listen ONCE. Complete the notes.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam18-t2-p2", book: "Cambridge 18", title: "Cambridge 18 — Test 2, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/18.section2-part2.mp3",
+            playOnce: true, description: "Listen ONCE. Choose the correct answer.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam18-t2-p3", book: "Cambridge 18", title: "Cambridge 18 — Test 2, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/18.section2-.part3.mp3",
+            playOnce: true, description: "Listen ONCE. Academic discussion.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam18-t2-p4", book: "Cambridge 18", title: "Cambridge 18 — Test 2, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/18.section2-.part4.mp3",
+            playOnce: true, description: "Listen ONCE. Academic lecture.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam18-t3-p1", book: "Cambridge 18", title: "Cambridge 18 — Test 3, Part 1",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/18.section3.part1.mp3",
+            playOnce: true, description: "Listen ONCE. Complete the notes.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam18-t3-p2", book: "Cambridge 18", title: "Cambridge 18 — Test 3, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/18.section3.part2.mp3",
+            playOnce: true, description: "Listen ONCE. Choose the correct answer.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam18-t3-p3", book: "Cambridge 18", title: "Cambridge 18 — Test 3, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/18.section3.part3.mp3",
+            playOnce: true, description: "Listen ONCE. Academic discussion.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam18-t3-p4", book: "Cambridge 18", title: "Cambridge 18 — Test 3, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/18.section3.part4.mp3",
+            playOnce: true, description: "Listen ONCE. Academic lecture.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam18-t4-p1", book: "Cambridge 18", title: "Cambridge 18 — Test 4, Part 1",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/18.section4.part1.mp3",
+            playOnce: true, description: "Listen ONCE. Complete the notes.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam18-t4-p2", book: "Cambridge 18", title: "Cambridge 18 — Test 4, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/18.section4.part2.mp3",
+            playOnce: true, description: "Listen ONCE. Choose the correct answer.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam18-t4-p3", book: "Cambridge 18", title: "Cambridge 18 — Test 4, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/18.section4.part3.mp3",
+            playOnce: true, description: "Listen ONCE. Academic discussion.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam18-t4-p4", book: "Cambridge 18", title: "Cambridge 18 — Test 4, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/18.section4.part4.mp3",
+            playOnce: true, description: "Listen ONCE. Academic lecture.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        // Cambridge 19 — Tests 2-4
+        {
+            id: "cam19-t2-p1", book: "Cambridge 19", title: "Cambridge 19 — Test 2, Part 1",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test2.Part1.mp3",
+            playOnce: true, description: "Listen ONCE. Complete the notes.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam19-t2-p2", book: "Cambridge 19", title: "Cambridge 19 — Test 2, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test2.Part2.mp3",
+            playOnce: true, description: "Listen ONCE. Choose the correct answer.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam19-t2-p3", book: "Cambridge 19", title: "Cambridge 19 — Test 2, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test2.Part3.mp3",
+            playOnce: true, description: "Listen ONCE. Academic discussion.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam19-t2-p4", book: "Cambridge 19", title: "Cambridge 19 — Test 2, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test2.Part4.mp3",
+            playOnce: true, description: "Listen ONCE. Academic lecture.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam19-t3-p1", book: "Cambridge 19", title: "Cambridge 19 — Test 3, Part 1",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test3.Part1.mp3",
+            playOnce: true, description: "Listen ONCE. Complete the notes.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam19-t3-p2", book: "Cambridge 19", title: "Cambridge 19 — Test 3, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test3.Part2.mp3",
+            playOnce: true, description: "Listen ONCE. Choose the correct answer.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam19-t3-p3", book: "Cambridge 19", title: "Cambridge 19 — Test 3, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test3.Part3.mp3",
+            playOnce: true, description: "Listen ONCE. Academic discussion.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam19-t3-p4", book: "Cambridge 19", title: "Cambridge 19 — Test 3, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test3.Part4.mp3",
+            playOnce: true, description: "Listen ONCE. Academic lecture.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam19-t4-p1", book: "Cambridge 19", title: "Cambridge 19 — Test 4, Part 1",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test4.Part1.mp3",
+            playOnce: true, description: "Listen ONCE. Complete the notes.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam19-t4-p2", book: "Cambridge 19", title: "Cambridge 19 — Test 4, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test4.Part2.mp3",
+            playOnce: true, description: "Listen ONCE. Choose the correct answer.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam19-t4-p3", book: "Cambridge 19", title: "Cambridge 19 — Test 4, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test4.Part3.mp3",
+            playOnce: true, description: "Listen ONCE. Academic discussion.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        {
+            id: "cam19-t4-p4", book: "Cambridge 19", title: "Cambridge 19 — Test 4, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/Test4.Part4.mp3",
+            playOnce: true, description: "Listen ONCE. Academic lecture.",
+            questions: [{ q: "Listen carefully and answer the questions.", options: ["A", "B", "C"], answer: 0 }]
+        },
+        // Cambridge 20 — Test 1
+        {
+            id: "cam20-t1-p1", book: "Cambridge 20", title: "Cambridge 20 — Test 1, Part 1",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/T1S1.m4a",
+            playOnce: true, description: "Listen ONCE. Restaurant recommendations. Write ONE WORD AND/OR A NUMBER.",
+            questions: [
+                { q: "The Junction: Good for people keen on ___", type: "fill", answer: "fish" },
+                { q: "The ___ is a good place for a drink", type: "fill", answer: "roof" },
+                { q: "Paloma: ___ food, good for sharing", type: "fill", answer: "Spanish" },
+                { q: "A limited selection of ___ food on the menu", type: "fill", answer: "vegetarian" },
+                { q: "The ___: At the top of a hotel", type: "fill", answer: "Audley" },
+                { q: "All the ___ are very good", type: "fill", answer: "reviews" },
+                { q: "Only uses ___ ingredients", type: "fill", answer: "local" },
+                { q: "Set lunch costs £___ per person", type: "fill", answer: "30" },
+                { q: "Portions probably of ___ size", type: "fill", answer: "average" }
+            ]
+        },
+        {
+            id: "cam20-t1-p2", book: "Cambridge 20", title: "Cambridge 20 — Test 1, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/T1S2.m4a",
+            playOnce: true, description: "Listen ONCE. Heather's pottery class. Choose the correct answer.",
+            questions: [
+                { q: "Pottery differs from other art forms because:", options: ["A. it lasts longer in the ground", "B. it is practised by more people", "C. it can be repaired more easily"], answer: 0 },
+                { q: "Archaeologists identify use of ancient pottery from:", options: ["A. the clay it was made with", "B. the marks that are on it", "C. the basic shape of it"], answer: 1 },
+                { q: "Some people join because they want to:", options: ["A. create an item that looks very old", "B. find something they are good at", "C. make something that will outlive them"], answer: 2 },
+                { q: "What does Heather value most about being a potter?", options: ["A. its calming effect", "B. its messy nature", "C. its physical benefits"], answer: 0 },
+                { q: "Most visitors to Edelman Pottery:", options: ["A. bring friends to join courses", "B. have never made a pot before", "C. try to learn techniques too quickly"], answer: 1 },
+                { q: "Heather reminds visitors that they should:", options: ["A. put on their aprons", "B. change their clothes", "C. take off their jewellery"], answer: 2 }
+            ]
+        },
+        {
+            id: "cam20-t1-p3", book: "Cambridge 20", title: "Cambridge 20 — Test 1, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/T1S3.m4a",
+            playOnce: true, description: "Listen ONCE. Loneliness research. Choose the correct answer.",
+            questions: [
+                { q: "Comparing loneliness to depression, the students:", options: ["A. doubt there will ever be a medical cure", "B. claim the link is overstated", "C. express frustration it's not taken seriously"], answer: 0 },
+                { q: "Why start with a personal example?", options: ["A. to explain how difficult loneliness can be", "B. to highlight a situation most students recognise", "C. to emphasise it's more common for men"], answer: 1 },
+                { q: "Talking to strangers helps because:", options: ["A. it creates a sense of belonging", "B. it builds self-confidence", "C. it makes people feel more positive"], answer: 0 },
+                { q: "They find it hard to understand why solitude is considered:", options: ["A. similar to loneliness", "B. necessary for mental health", "C. an enjoyable experience"], answer: 2 }
+            ]
+        },
+        {
+            id: "cam20-t1-p4", book: "Cambridge 20", title: "Cambridge 20 — Test 1, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/T1S4.m4a",
+            playOnce: true, description: "Listen ONCE. Reclaiming urban rivers. Write ONE WORD ONLY.",
+            questions: [
+                { q: "Pollution from ___ on the river bank", type: "fill", answer: "factories" },
+                { q: "River Thames declared biologically ___", type: "fill", answer: "dead" },
+                { q: "Seals and even a ___ have been seen", type: "fill", answer: "whale" },
+                { q: "Warehouses converted to restaurants and ___", type: "fill", answer: "apartments" },
+                { q: "In LA, plans to build a riverside ___", type: "fill", answer: "park" },
+                { q: "Display ___ projects", type: "fill", answer: "art" },
+                { q: "In Paris, ___ are created every summer", type: "fill", answer: "beaches" },
+                { q: "Over 2 billion passengers travel by ___", type: "fill", answer: "ferry" },
+                { q: "Goods transported by barges and electric ___", type: "fill", answer: "bikes" },
+                { q: "Or in future, by ___", type: "fill", answer: "drone" }
+            ]
+        },
+        // Cambridge 20 — Test 2
+        {
+            id: "cam20-t2-p1", book: "Cambridge 20", title: "Cambridge 20 — Test 2, Part 1",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/T2S1.m4a",
+            playOnce: true, description: "Listen ONCE. Support for carers. Write ONE WORD.",
+            questions: [
+                { q: "This can give the carer a ___", type: "fill", answer: "break" },
+                { q: "How much ___ the caring involves", type: "fill", answer: "time" },
+                { q: "Helping her have a ___", type: "fill", answer: "shower" },
+                { q: "Dealing with ___", type: "fill", answer: "money" },
+                { q: "Difficulty: loss of ___", type: "fill", answer: "memory" },
+                { q: "Difficulty: ___ her", type: "fill", answer: "lifting" },
+                { q: "Preventing a ___", type: "fill", answer: "fall" },
+                { q: "Transport costs: cost of a ___", type: "fill", answer: "taxi" },
+                { q: "Car-related costs: fuel and ___", type: "fill", answer: "insurance" },
+                { q: "Help to reduce ___", type: "fill", answer: "stress" }
+            ]
+        },
+        {
+            id: "cam20-t2-p2", book: "Cambridge 20", title: "Cambridge 20 — Test 2, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/T2S2.m4a",
+            playOnce: true, description: "Listen ONCE. Volunteer activities. Choose the correct answer.",
+            questions: [
+                { q: "Which event requires the largest number of volunteers?", options: ["A. music festival", "B. science festival", "C. book festival"], answer: 1 },
+                { q: "Most important requirement for volunteers?", options: ["A. interpersonal skills", "B. personal interest", "C. flexibility"], answer: 0 },
+                { q: "New volunteers start in the week beginning:", options: ["A. 2 September", "B. 9 September", "C. 23 September"], answer: 1 },
+                { q: "Next annual event for volunteers?", options: ["A. a boat trip", "B. a barbecue", "C. a party"], answer: 0 }
+            ]
+        },
+        {
+            id: "cam20-t2-p3", book: "Cambridge 20", title: "Cambridge 20 — Test 2, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/T2S3.m4a",
+            playOnce: true, description: "Listen ONCE. Human geography discussion.",
+            questions: [
+                { q: "In her city the main problem is:", options: ["A. crime", "B. housing", "C. unemployment"], answer: 2 },
+                { q: "Recent additions to outskirts both students are happy about:", options: ["A. conference centres", "B. sports centres", "C. retail centres"], answer: 0 },
+                { q: "Developing disused industrial sites may:", options: ["A. have unexpected costs", "B. damage the environment", "C. destroy historical buildings"], answer: 0 },
+                { q: "Masdar City is an example of achieving:", options: ["A. waste recycling", "B. sustainable energy use", "C. free transport"], answer: 1 },
+                { q: "About Greenhill Abbots, Colin is uncertain about:", options: ["A. what its objectives were", "B. why there was opposition", "C. how much has been built"], answer: 2 }
+            ]
+        },
+        {
+            id: "cam20-t2-p4", book: "Cambridge 20", title: "Cambridge 20 — Test 2, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/T2S4.m4a",
+            playOnce: true, description: "Listen ONCE. Developing food trends. Write ONE WORD ONLY.",
+            questions: [
+                { q: "Growth started with ___ of food shared on social media", type: "fill", answer: "photos" },
+                { q: "Sales of ___ food brands grew rapidly", type: "fill", answer: "vegan" },
+                { q: "Famous ___ are influential", type: "fill", answer: "chefs" },
+                { q: "Avocado: ___ were invited to visit growers", type: "fill", answer: "journalists" },
+                { q: "Advertising focused on ___ benefits", type: "fill", answer: "health" },
+                { q: "Oat milk: Promoted through ___ shops", type: "fill", answer: "coffee" },
+                { q: "It appealed to consumers concerned about the ___", type: "fill", answer: "environment" },
+                { q: "Norwegian skrei strengthened the ___ of Norwegian seafood", type: "fill", answer: "reputation" },
+                { q: "Quinoa success led to an increase in its ___", type: "fill", answer: "price" },
+                { q: "Overuse of resources resulted in poor quality ___", type: "fill", answer: "soil" }
+            ]
+        },
+        // Cambridge 20 — Test 3
+        {
+            id: "cam20-t3-p1", book: "Cambridge 20", title: "Cambridge 20 — Test 3, Part 1",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/T3S1.m4a",
+            playOnce: true, description: "Listen ONCE. Furniture Rental Companies. Write ONE WORD AND/OR A NUMBER.",
+            questions: [
+                { q: "Peak Rentals: Prices range from $105 to $___", type: "fill", answer: "239" },
+                { q: "The furniture is very ___", type: "fill", answer: "modern" },
+                { q: "Special offer: free ___ with every living room set", type: "fill", answer: "lamp" },
+                { q: "___ and Oliver: Mid-range prices", type: "fill", answer: "Aaron" },
+                { q: "Also offers renting ___ items", type: "fill", answer: "electronic" },
+                { q: "Must have own ___", type: "fill", answer: "insurance" },
+                { q: "___ Rentals", type: "fill", answer: "Space" },
+                { q: "See the ___ for most up-to-date prices", type: "fill", answer: "app" },
+                { q: "___ are allowed within 7 days of delivery", type: "fill", answer: "exchanges" }
+            ]
+        },
+        {
+            id: "cam20-t3-p2", book: "Cambridge 20", title: "Cambridge 20 — Test 3, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/T3S2.m4a",
+            playOnce: true, description: "Listen ONCE. Community archaeology project.",
+            questions: [
+                { q: "Who started the community project?", options: ["A. castle owners", "B. a national charity", "C. local council"], answer: 1 },
+                { q: "How was the gold coin found?", options: ["A. Heavy rain removed soil", "B. Wild rabbits dug it up", "C. Metal detector search"], answer: 0 },
+                { q: "What are the team still hoping to find?", options: ["A. everyday pottery", "B. animal bones", "C. pieces of jewellery"], answer: 2 },
+                { q: "What was found across the river?", options: ["A. remains of a palace", "B. outline of fields", "C. small huts"], answer: 1 },
+                { q: "After work ends this summer, the team will:", options: ["A. prepare a museum display", "B. do a TV programme", "C. organise school visits"], answer: 2 }
+            ]
+        },
+        {
+            id: "cam20-t3-p3", book: "Cambridge 20", title: "Cambridge 20 — Test 3, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/T3S3.m4a",
+            playOnce: true, description: "Listen ONCE. Theatre programmes discussion.",
+            questions: [
+                { q: "Finn was pleased their topic:", options: ["A. wasn't familiar to module leader", "B. hadn't been chosen by others", "C. wasn't difficult to research"], answer: 1 },
+                { q: "A mistaken belief about theatre programmes:", options: ["A. theatres pay companies to produce them", "B. few people buy them", "C. they contain more adverts now"], answer: 0 },
+                { q: "In early British theatre, programmes:", options: ["A. were hard to obtain", "B. were given out free", "C. were seen as a contract"], answer: 2 },
+                { q: "Compared to 19th-century, 18th-century programmes:", options: ["A. were more original", "B. more colourful", "C. more informative"], answer: 2 },
+                { q: "Maya doesn't understand why in the 20th century:", options: ["A. few programmes were printed in USA", "B. British programmes failed to develop", "C. British programmes copied the USA"], answer: 1 }
+            ]
+        },
+        {
+            id: "cam20-t3-p4", book: "Cambridge 20", title: "Cambridge 20 — Test 3, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/T3S4.m4a",
+            playOnce: true, description: "Listen ONCE. Inclusive design. Write ONE WORD ONLY.",
+            questions: [
+                { q: "Design without the need for any ___", type: "fill", answer: "adaptation" },
+                { q: "Universal design caters for ___ problems", type: "fill", answer: "cognitive" },
+                { q: "___ which are adjustable", type: "fill", answer: "desks" },
+                { q: "___ in public toilets easier to use", type: "fill", answer: "taps" },
+                { q: "Designers avoid using ___", type: "fill", answer: "blue" },
+                { q: "Commands using mouse, keyboard or ___", type: "fill", answer: "voice" },
+                { q: "Seatbelts problematic for ___ women", type: "fill", answer: "pregnant" },
+                { q: "PPE unsuitable due to women's ___", type: "fill", answer: "shoulders" },
+                { q: "PPE worst for female ___ officers", type: "fill", answer: "police" },
+                { q: "Office ___ often too low for women", type: "fill", answer: "temperature" }
+            ]
+        },
+        // Cambridge 20 — Test 4
+        {
+            id: "cam20-t4-p1", book: "Cambridge 20", title: "Cambridge 20 — Test 4, Part 1",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/T4S1.m4a",
+            playOnce: true, description: "Listen ONCE. Advice on family visit. Write ONE WORD AND/OR A NUMBER.",
+            questions: [
+                { q: "___ Hotel on George Street", type: "fill", answer: "Kings" },
+                { q: "Family room per night: £___", type: "fill", answer: "125" },
+                { q: "A ___ tour of the city centre", type: "fill", answer: "walking" },
+                { q: "A trip by ___ to the old fort", type: "fill", answer: "boat" },
+                { q: "Best day to visit Science Museum: ___", type: "fill", answer: "Tuesday" },
+                { q: "Exhibition about ___ opening soon", type: "fill", answer: "space" },
+                { q: "Clacton Market: good for ___ food", type: "fill", answer: "vegetarian" },
+                { q: "Need lunch before ___ p.m.", type: "fill", answer: "2.30" },
+                { q: "Save up to ___% on tickets", type: "fill", answer: "75" },
+                { q: "Climb Telegraph Hill to see the ___", type: "fill", answer: "port" }
+            ]
+        },
+        {
+            id: "cam20-t4-p2", book: "Cambridge 20", title: "Cambridge 20 — Test 4, Part 2",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/T4S2.m4a",
+            playOnce: true, description: "Listen ONCE. Football stadium tour — history of football.",
+            questions: [
+                { q: "1870:", options: ["A. pay for players", "B. goal design change", "C. lights for matches", "D. introduction of goalkeepers", "E. first international match", "F. rule changes", "G. fee for spectators", "H. agreed game length"], answer: 3 },
+                { q: "1874:", options: ["A. pay for players", "B. goal design change", "C. lights for matches", "D. introduction of goalkeepers", "E. first international match", "F. rule changes", "G. fee for spectators", "H. agreed game length"], answer: 5 },
+                { q: "1875:", options: ["A. pay for players", "B. goal design change", "C. lights for matches", "D. introduction of goalkeepers", "E. first international match", "F. rule changes", "G. fee for spectators", "H. agreed game length"], answer: 1 },
+                { q: "1877:", options: ["A. pay for players", "B. goal design change", "C. lights for matches", "D. goalkeepers", "E. international match", "F. rule changes", "G. spectator fee", "H. agreed game length"], answer: 7 },
+                { q: "1878:", options: ["A. pay for players", "B. goal design change", "C. lights for matches", "D. goalkeepers", "E. international match", "F. rule changes", "G. spectator fee", "H. agreed game length"], answer: 2 },
+                { q: "1880:", options: ["A. pay for players", "B. goal design change", "C. lights for matches", "D. goalkeepers", "E. international match", "F. rule changes", "G. spectator fee", "H. agreed game length"], answer: 6 }
+            ]
+        },
+        {
+            id: "cam20-t4-p3", book: "Cambridge 20", title: "Cambridge 20 — Test 4, Part 3",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/T4S3.m4a",
+            playOnce: true, description: "Listen ONCE. Handwriting discussion.",
+            questions: [
+                { q: "Laptops for children with dyslexia:", options: ["A. lack motivation to learn that way", "B. become fluent quickly", "C. react more positively to mistakes"], answer: 2 },
+                { q: "About cursive vs print, the woman thinks:", options: ["A. cursive disadvantages some children", "B. print linked to lower performance", "C. teachers prefer traditional approach"], answer: 0 },
+                { q: "Poor handwriting's impact on exams:", options: ["A. evidence grades are affected", "B. neat handwriting less important now", "C. candidates write more slowly"], answer: 0 },
+                { q: "Man's prediction about handwriting's future:", options: ["A. touch typing taught before writing", "B. children will continue writing by hand", "C. people will dislike handwriting on devices"], answer: 1 },
+                { q: "Digital devices make it difficult to:", options: ["A. take detailed notes", "B. spell and punctuate", "C. read old documents"], answer: 1 },
+                { q: "Students feel about their own handwriting:", options: ["A. concerned about speed", "B. embarrassed by comments", "C. regretful about lost habit"], answer: 2 }
+            ]
+        },
+        {
+            id: "cam20-t4-p4", book: "Cambridge 20", title: "Cambridge 20 — Test 4, Part 4",
+            audioFile: "https://github.com/anhtuan-mai/ielts-prep/releases/download/audio-v1/T4S4.m4a",
+            playOnce: true, description: "Listen ONCE. Chembe Bird Sanctuary research. Write ONE WORD ONLY.",
+            questions: [
+                { q: "Birds of prey destroy ___ and other rodents", type: "fill", answer: "rats" },
+                { q: "Help prevent farmers being bitten by ___", type: "fill", answer: "snakes" },
+                { q: "They encourage ___ in the area", type: "fill", answer: "tourism" },
+                { q: "Birds accidentally killed by ___", type: "fill", answer: "traffic" },
+                { q: "Electrocution especially when there is ___", type: "fill", answer: "rain" },
+                { q: "Farmers may illegally ___ them", type: "fill", answer: "poison" },
+                { q: "Providing a ___ for chickens (expensive)", type: "fill", answer: "building" },
+                { q: "Frighten birds by keeping a ___", type: "fill", answer: "dog" },
+                { q: "Making a ___ with metal objects", type: "fill", answer: "noise" },
+                { q: "A ___ of methods is usually most effective", type: "fill", answer: "combination" }
+            ]
         }
     ],
 
